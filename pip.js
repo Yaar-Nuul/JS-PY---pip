@@ -1,11 +1,13 @@
 
 
-const userPreferences = [{}];
+const userPreferences = {};
 
 function addUser(userId, preferredCategories) {
     userPreferences[userId] = preferredCategories;
+    return userPreferences
 }
-console.log("001", ["trousers", "shorts", "bag"]);
+let addedUser = addUser("001", ["trousers", "shorts", "bag"])
+console.log({addedUser});
 
 function getRecommendations(userId) {
     const preferredCategories = userPreferences[userId];

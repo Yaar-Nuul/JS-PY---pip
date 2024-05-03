@@ -21,7 +21,7 @@ def get_recommendations(user_id):
     if not preferred_categories:
         return []
     
-    return ["Recommended Items"]
+    return [f"Recommended Items ${"001"}"]
 result = get_recommendations("001")
 print(result)
 
